@@ -1,0 +1,146 @@
+h1 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin: 1rem 0.5rem 2rem 0.5rem;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.85rem;
+    margin: 1rem 0.5rem 2rem 0.5rem;
+  }
+
+  
+p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+
+  main {
+    max-width: 90vw;
+    margin: 1rem auto;
+}
+
+section {
+    padding: 1rem; 
+    border: 1px solid #b0b0b0;
+    margin: 2rem 0 3rem 0;
+}
+
+@media screen and (min-width: 800px) {
+
+    .row1,.row2 {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    section {
+        border: unset;
+        position: relative;
+    }
+
+    .wrapper {
+        max-width: 850px; 
+        margin: 0 auto;
+    }
+
+    section h2 {
+        background-size: contain;
+        background-position-x: right;
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+
+    .flowers h2 {
+        background-image: url(../img/flower.svg);
+    }
+
+    
+
+    .plants h2 {
+        background-image: url(../img/plant.svg);
+    }
+
+
+    .trees h2 {
+        background-image: url(../img/tree.svg);
+    }
+
+    .animals h2 {
+        background-image: url(../img/panda.svg);
+    }
+
+
+    section::before {
+        content: "";
+        position: absolute;
+        top: 20%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 4px solid #444;
+        background-position-x: center;
+        background-position-y: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .plants::before {
+        left: -240px;
+        background-image: url(../img/plant.svg);
+        background-color: rgb(149, 255, 0);
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+        opacity: 0.2;
+        background-size: 70%;
+        background-position-y: center;
+    }
+
+
+    .trees::before {
+        right: -40px;
+        background-image: url(../img/tree.svg);
+        background-size: 86.8%;
+        background-color: #2ac82a;
+        top: 390px;
+        z-index: 2;
+    }
+   
+    .flowers::before {
+        left: 0%;
+        background-image: url(../img/flower.svg);
+        background-color: #ff7474;
+        top: 61.4%;
+        opacity: 0.08;
+        width: 400px;
+        height: 400px;
+        border-radius: 200px;
+    }
+
+    .animals::before {
+        left: 1rem;
+        background-image: url(../img/panda.svg);
+        background-size: 80%;
+        background-color: #deaeff;
+        top: 1.8rem;
+        height: 2rem;
+        width: 2rem;
+        background-size: 68%;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        border: 1px solid #444;
+    }
+
+    .animals h2 {padding-left: 1.9rem;}
+}
