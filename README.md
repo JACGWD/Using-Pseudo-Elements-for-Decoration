@@ -21,7 +21,8 @@ The trick however, is in order to attach a pseudo-element to a tag, **the tag mu
 
     .parent-tag {
         position: relative;
-        /* forces absolutely positioned child elements to be placed relative to the top/left corner of this element by default */
+        /* forces absolutely positioned child elements to be placed relative 
+        to the top/left corner of this element by default */
     }
 
 ### Step 2: Create the pseudo-element
@@ -39,7 +40,8 @@ The trick however, is in order to attach a pseudo-element to a tag, **the tag mu
 
         z-index: -1;
         /* control stacking like "send to back" */
-        /* can be any negative (send to back) or positive (send to front) number, ex: 99 is the 99th layer above the background */
+        /* can be any negative (send to back) or positive (send to front) number, 
+        ex: 99 is the 99th layer above the background */
 
         display: block;
         /* behave as normal block level element */
